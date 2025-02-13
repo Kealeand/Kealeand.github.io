@@ -1,3 +1,13 @@
-const d = new Date();
+function showSection(sectionId) {
+    // First, hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
 
-console.log(`Welkom! Je bekijkt deze pagina op ${ d.getDate() }-${ d.getMonth() + 1 }-${ d.getFullYear() }.`);
+    // Then, show the section corresponding to the clicked button
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+}

@@ -1,6 +1,57 @@
 body {
-	color: lightblue;
+	color: white;
 	background-color: cornflowerblue;
 	font-size: 25px;
 	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-image: url(https://st.depositphotos.com/2228340/2414/i/450/depositphotos_24140635-stock-photo-seamless-starfield.jpg);
+	overflow: hidden;
+}
+
+.top-bar {
+	display: flex;
+	align-content: center;
+	margin: 0px;
+	width: 100vw;
+	height: 100px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.top-bar-button {
+	flex: 1;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	margin: 5px;
+	background-color: dodgerblue;
+	border: 0px;
+	box-shadow: 0 10px 20px rgba(58, 75, 81, 0.7);
+	border-radius: 5px;
+}
+
+.top-bar-button:hover {
+	background-color: rgb(86, 171, 255);
+	transform: scale(1.05);
+	animation: top;
+}
+
+.section {
+	text-align: left;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+	display: none;
+	width: 90%;
+	height: 325px;
+	background-color: rgb(45, 86, 122);
+	overflow: hidden;
+}
+
+#section1 {
+	display: block;
 }
